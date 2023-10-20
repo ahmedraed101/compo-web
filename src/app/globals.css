@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@layer base {
+  .main {
+    @apply min-h-screen pt-32 px-0;
+  }
+  .center {
+    @apply mx-auto;
+  }
+
+  .link {
+    @apply hover:text-primaryBlue-500 duration-250 border-b-2 border-b-transparent hover:border-b-primaryBlue-500 text-lg;
+  }
 }
